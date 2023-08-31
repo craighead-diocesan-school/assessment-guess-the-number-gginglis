@@ -58,7 +58,7 @@ function guessTheNumber() {
 }
 
 // function scoreboard() {
-//     for (let noOfAttempts of ) {
+//     for (let noOfAttempts of ) { 
 //         alert(userName + noOfAttempts)
 //     }
 // }
