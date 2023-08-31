@@ -2,9 +2,16 @@ let noOfAttempts
 
 let userName
 
-let scores
+let users = [
+    { name: 'g', score: '1' },
+    { name: 'andra', score: '14' },
+]
 
-let score
+let user = {
+    name: userName,
+    score: noOfAttempts,
+}
+users.push(user)
 
 function guessTheNumber() {
     let noOfAttempts = 0
@@ -57,8 +64,8 @@ function guessTheNumber() {
     }
 }
 
-// function scoreboard() {
-//     for (let noOfAttempts of ) {  
-//         alert(userName + noOfAttempts)
-//     }
-// }
+function scoreboard() {
+    for (let user of users) {
+        alert(user.name + ', ' + user.score)
+    }
+}
