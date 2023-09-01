@@ -69,5 +69,6 @@ function guessTheNumber() {
 function scoreboard() {
     for (let user of users) {
         alert(user.name + ', ' + user.score)
+        // runs through the list of people that have played and what their score was
     }
 }
