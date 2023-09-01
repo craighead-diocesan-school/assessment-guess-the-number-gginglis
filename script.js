@@ -7,12 +7,6 @@ let users = [
     { name: 'andra', score: '14' },
 ]
 
-let user = {
-    name: userName,
-    score: noOfAttempts,
-}
-users.push(user)
-
 function guessTheNumber() {
     let noOfAttempts = 0
     // starts the count of the number of the attempts at 0
@@ -31,6 +25,8 @@ function guessTheNumber() {
         // telling the computer that the users input is a number
         noOfAttempts = noOfAttempts + 1
         // adding 1 to the number of attempts
+
+
         if (userGuess <= 20 && userGuess >= 1) {
             // so the user cant enter a number above 20 as their guess
             if (userGuess == compChoice) {
@@ -54,6 +50,7 @@ function guessTheNumber() {
                 }
                 numberGuessed = true
                 // changes boolean value to true, so the loop stops
+
             }
         }
         else {
@@ -62,6 +59,11 @@ function guessTheNumber() {
             // tells the user if their input was outside the range
         }
     }
+    let user = {
+        name: userName,
+        score: noOfAttempts,
+    }
+    users.push(user)
 }
 
 function scoreboard() {
