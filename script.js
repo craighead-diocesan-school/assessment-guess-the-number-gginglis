@@ -1,6 +1,6 @@
 let users = [
     { name: 'g', score: '1' },
-    { name: 'andra', score: '14' },
+    { name: 'andra', score: '12' },
 ]
 
 function guessTheNumber() {
