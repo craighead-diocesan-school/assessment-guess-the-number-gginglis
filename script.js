@@ -17,7 +17,6 @@ function guessTheNumber() {
     else {
         let compChoice = Math.floor(Math.random() * (21 - 1) + 1);
         // randomises the options from the array to pick a number from 1-20
-        alert(compChoice)
         while (numberGuessed == false) {
             // this code will run while the number hasnt been guessed
             let userGuess = prompt('pick a number')
@@ -57,7 +56,6 @@ function guessTheNumber() {
                 // tells the user if their input was outside the range/invalid
             }
         }
-
         let user = {
             name: userName,
             score: noOfAttempts,
